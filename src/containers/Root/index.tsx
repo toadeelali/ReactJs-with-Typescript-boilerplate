@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Button from 'components/core/button';
+import Button from 'components/core/Button/button';
 import { useDispatch } from 'react-redux';
 
 import { themeActions } from 'themes';
@@ -17,6 +17,7 @@ const MainStackNav = (): React.ReactElement => {
         Main page
         <br />
         <Button
+          text={currentTheme}
           callback={() => {
             dispatch(themeActions.set(currentTheme === 'dark' ? 'light' : 'dark'));
           }}

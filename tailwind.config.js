@@ -1,4 +1,3 @@
-// We are using manual setup for purging css so just switch automatic purging off
 module.exports = {
   purge: false,
   target: 'relaxed',

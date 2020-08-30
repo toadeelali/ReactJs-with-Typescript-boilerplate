@@ -40,19 +40,15 @@
     "tailwindcss": "^1.7.5"
   },
   "scripts": {
-    "start": "concurrently \"npm run start:tw\" \"npm run start:cra\"",
-    "build": "npm run build:tw && npm run build:cra",
-    "start:tw": "postcss ./src/assets/css/index.css -o ./src/assets/css/tailwind.css -w",
-    "start:cra": "react-scripts start",
-    "build:tw": "postcss ./src/assets/css/index.css -o ./src/assets/css/tailwind.css --env production",
+    "start": "react-scripts start",
+    "build": "npm run build:style && npm run build:cra",
+    "start:style": "postcss ./src/assets/css/index.css -o ./src/assets/css/tailwind.css -w",
+    "build:style": "postcss ./src/assets/css/index.css -o ./src/assets/css/tailwind.css --env production",
     "build:cra": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "format": "prettier --write **/*.{ts,tsx,js,jsx,json}",
     "lint": "tsc --noEmit && eslint **/*.{ts,tsx,js,jsx,json}"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
   },
   "browserslist": {
     "production": [
