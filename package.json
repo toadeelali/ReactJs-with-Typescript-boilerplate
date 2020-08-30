@@ -1,0 +1,69 @@
+{
+  "name": "ts-bp",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "react-scripts": "3.4.3",
+    "redux": "^4.0.5",
+    "redux-thunk": "^2.3.0",
+    "typescript": "^3.7.5",
+    "redux-devtools-extension": "^2.13.8"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^2.3.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.2.1",
+    "@types/jest": "^24.9.1",
+    "@types/node": "^12.12.54",
+    "@types/react": "^16.9.48",
+    "@types/react-dom": "^16.9.8",
+    "@types/react-redux": "^7.1.9",
+    "@typescript-eslint/eslint-plugin": "^3.10.1",
+    "@typescript-eslint/parser": "^3.10.1",
+    "autoprefixer": "^9.8.6",
+    "concurrently": "^5.3.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-config-airbnb-typescript": "^9.0.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "eslint-plugin-react": "^7.20.6",
+    "eslint-plugin-react-hooks": "^4.1.0",
+    "postcss-cli": "^7.1.1",
+    "prettier": "^2.1.1",
+    "tailwindcss": "^1.7.5"
+  },
+  "scripts": {
+    "start": "concurrently \"npm run start:tw\" \"npm run start:cra\"",
+    "build": "npm run build:tw && npm run build:cra",
+    "start:tw": "postcss ./src/assets/css/index.css -o ./src/assets/css/tailwind.css -w",
+    "start:cra": "react-scripts start",
+    "build:tw": "postcss ./src/assets/css/index.css -o ./src/assets/css/tailwind.css --env production",
+    "build:cra": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "format": "prettier --write **/*.{ts,tsx,js,jsx,json}",
+    "lint": "tsc --noEmit && eslint **/*.{ts,tsx,js,jsx,json}"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
