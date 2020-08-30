@@ -28,12 +28,12 @@ export interface IGenThemeActions<K extends IThemeActions> extends Action {
 // action creator Higher order function
 // Takes IThemeActions actions as input
 // returns IGenThemeActions type of actions/payload
-export function actionCreator<T extends IThemeActions>(type: T) {
+export function actionCreator<T extends IThemeActions>(type: T): (P: IThemePayload<T>) => IGenThemeActions<T> {
   return (payload: IThemePayload<T>): IGenThemeActions<T> => ({ type, payload });
 }
 
 // just a work around need to find proper way
-export type IThemeReducer = IGenThemeActions<'RESET_THEME'> | IGenThemeActions<'SET_THEME'>;
+export type ThemeActions = IGenThemeActions<'SET_THEME'> | IGenThemeActions<'RESET_THEME'>;
 
 // Final state to of Theme reducer will look like this
 export interface IThemeState {

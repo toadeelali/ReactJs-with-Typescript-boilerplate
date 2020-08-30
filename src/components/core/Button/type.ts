@@ -1,5 +1,3 @@
-import { type } from 'os';
-
 import { SyntheticEvent } from 'react';
 
 export interface IButton {

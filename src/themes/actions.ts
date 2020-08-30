@@ -1,4 +1,3 @@
-// import { ActionCreator } from 'redux';
 import { SupportedThemes, actionCreator } from './types';
 
 const dark = { key: 'dark' };
