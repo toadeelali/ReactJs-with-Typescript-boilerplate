@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@tailwindui/react": "^0.1.1",
+    "axios": "^0.20.0",
+    "md5-base64": "0.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-redux": "^7.2.1",
@@ -14,7 +17,6 @@
     "typescript": "^3.7.5"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.3.0",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.5.0",
     "@testing-library/user-event": "^7.2.1",
@@ -24,6 +26,7 @@
     "@types/react-dom": "^16.9.8",
     "@types/react-redux": "^7.1.9",
     "@types/react-router-dom": "^5.1.5",
+    "@types/react-transition-group": "^4.4.0",
     "@typescript-eslint/eslint-plugin": "^3.10.1",
     "@typescript-eslint/parser": "^3.10.1",
     "autoprefixer": "^9.8.6",
@@ -38,8 +41,9 @@
     "eslint-plugin-react": "^7.20.6",
     "eslint-plugin-react-hooks": "^4.1.0",
     "postcss-cli": "^7.1.1",
+    "postcss-import": "^12.0.1",
     "prettier": "^2.1.1",
-    "tailwindcss": "^1.7.5"
+    "tailwindcss": "^1.8.2"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,15 +1,18 @@
 import React from 'react';
 import { Provider } from 'react-redux';
-import { store } from 'services/state';
+import store from 'services/state/configureStore';
 
-import { Routes } from 'navigation';
+import { RouteController } from 'navigation';
 import ErrorBoundary from 'containers/errorBoundary';
+import { SidebarProvider } from 'services';
 
 function EntryPoint(): React.ReactElement {
   return (
     <Provider store={store}>
       <ErrorBoundary>
-        <Routes />
+        <SidebarProvider>
+          <RouteController />
+        </SidebarProvider>
       </ErrorBoundary>
     </Provider>
   );

@@ -5,7 +5,11 @@ interface IMain {
 }
 
 const Main = ({ children }: IMain): ReactElement => {
-  return <div className="p-8 m pt-24 px-64">{children}</div>;
+  return (
+    <main className="h-full overflow-y-auto">
+      <div className="container grid px-6 mx-auto">{children}</div>
+    </main>
+  );
 };
 
 export default Main;

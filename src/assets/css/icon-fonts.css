@@ -1,0 +1,122 @@
+@font-face {
+  font-family: 'icon';
+  src:  url('../fonts/icon.eot?q5xmp3');
+  src:  url('../fonts/icon.eot?q5xmp3#iefix') format('embedded-opentype'),
+    url('../fonts/icon.ttf?q5xmp3') format('truetype'),
+    url('../fonts/icon.woff?q5xmp3') format('woff'),
+    url('../fonts/icon.svg?q5xmp3#icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="i-"], [class*=" i-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1.5;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ /****************************/
+
+ .i-cross:before {
+  content: "\e918";
+}
+.i-question-circle:before {
+  content: "\e900";
+}
+.i-person:before {
+  content: "\e901";
+}
+.i-camera-video:before {
+  content: "\e902";
+}
+.i-calendar3:before {
+  content: "\e903";
+}
+.i-book:before {
+  content: "\e904";
+}
+.i-brush:before {
+  content: "\e905";
+}
+.i-chat-text:before {
+  content: "\e906";
+}
+.i-check2:before {
+  content: "\e907";
+}
+.i-gear:before {
+  content: "\e908";
+}
+.i-grid-1x2:before {
+  content: "\e909";
+}
+.i-house:before {
+  content: "\e90a";
+}
+.i-bell:before {
+  content: "\e90b";
+}
+.i-paperclip:before {
+  content: "\e90c";
+}
+.i-funnel:before {
+  content: "\e90d";
+}
+.i-search:before {
+  content: "\e90e";
+}
+.i-caret-down-fill:before {
+  content: "\e90f";
+}
+.i-arrow-right:before {
+  content: "\e910";
+}
+.i-arrow-left:before {
+  content: "\e911";
+}
+.i-arrow-down:before {
+  content: "\e912";
+}
+.i-arrow-up:before {
+  content: "\e913";
+}
+.i-box-arrow-up-right:before {
+  content: "\e914";
+}
+.i-caret-up-fill:before {
+  content: "\e915";
+}
+.i-lock:before {
+  content: "\e916";
+}
+.i-bookmark-check:before {
+  content: "\e917";
+}
+.i-list-check:before {
+  content: "\e919";
+}
+.i-link-45deg:before {
+  content: "\e91a";
+}
+.i-clipboard-check:before {
+  content: "\e91b";
+}
+.i-receipt-cutoff:before {
+  content: "\e91c";
+}
+.i-text-paragraph:before {
+  content: "\e91d";
+}
+.i-file-earmark-text:before {
+  content: "\e91e";
+}

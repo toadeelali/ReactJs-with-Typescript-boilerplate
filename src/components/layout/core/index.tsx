@@ -1,11 +1,21 @@
-import React, { ReactNode } from 'react';
+import React, { ReactElement, useContext, useEffect } from 'react';
+import { SidebarContext } from 'services';
+import { useLocation } from 'react-router-dom';
+import { ICore } from './types';
 
-interface ICore {
-  children: ReactNode;
-}
+const Page = ({ children, variant = 'withNav' }: ICore): ReactElement => {
+  const { isSidebarOpen, closeSidebar } = useContext(SidebarContext);
+  const location = useLocation();
 
-const Core = ({ children }: ICore): React.ReactElement => {
-  return <div className="pl-64 pt-24">{children}</div>;
+  useEffect(() => {
+    closeSidebar();
+  }, [closeSidebar, location]);
+
+  return (
+    <div className={`flex h-screen bg-gray-50 dark:bg-gray-900 ${isSidebarOpen ? 'overflow-hidden' : ''}`}>
+      {children}
+    </div>
+  );
 };
 
-export default Core;
+export default Page;
