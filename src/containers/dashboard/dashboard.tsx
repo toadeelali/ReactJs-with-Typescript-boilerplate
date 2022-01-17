@@ -3,7 +3,7 @@ import { Main, PageTitle, TabNav, Card, CardBody } from 'components';
 import { Router, Switch, Redirect, Route } from 'react-router-dom';
 
 import { useLocale } from 'locales';
-import Button from 'components/core/button';
+import Button from 'components/core/_button';
 
 import { Routs, history, TRouts, goToRout } from 'navigation';
 

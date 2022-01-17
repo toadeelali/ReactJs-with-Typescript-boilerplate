@@ -1,7 +1,7 @@
 import React, { ReactElement } from 'react';
 
 import { useLocationDetails, goToRout, Routs, TRouts } from 'navigation';
-import { TabButton } from 'components/core/button';
+import { TabButton } from 'components/core/_button';
 import { useLocale, TLocales } from 'locales';
 import { ITabNav } from './types';
 

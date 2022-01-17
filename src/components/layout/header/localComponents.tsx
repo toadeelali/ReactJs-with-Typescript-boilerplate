@@ -3,7 +3,7 @@ import Dropdown from 'components/dropdown/Dropdown';
 import DropdownItem from 'components/dropdown/DropdownItem';
 import { useLocale } from 'locales';
 import { SidebarContext } from 'services';
-import { CircleButton } from 'components/core/button';
+import { CircleButton } from 'components/core/_button';
 
 export const LeftContainer = (): ReactElement => {
   const { toggleSidebar } = useContext(SidebarContext);

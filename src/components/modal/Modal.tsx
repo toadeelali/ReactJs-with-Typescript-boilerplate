@@ -2,7 +2,7 @@ import React, { useEffect, useState, ReactElement } from 'react';
 import { createPortal } from 'react-dom';
 import { Transition } from '@tailwindui/react';
 
-import { CircleButton } from 'components/core/button';
+import { CircleButton } from 'components/core/_button';
 import Backdrop from '../backdrop';
 import { IModal } from './types';
 

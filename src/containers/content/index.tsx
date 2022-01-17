@@ -3,7 +3,7 @@ import React from 'react';
 import { Header, SideNav, Main, Page, PageWrapper } from 'components/layout';
 import { PageTitle, SectionTitle } from 'components';
 import { useLocale } from 'locales';
-import Button from 'components/core/button';
+import Button from 'components/core/_button';
 
 const Content: React.FC<unknown> = () => {
   const texts = useLocale();
